@@ -1,0 +1,9 @@
+#API keys
+.env
+
+#Ignore DB
+*.xlsx
+*.csv
+
+#ignore pycache
+__pycache__/
