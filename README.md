@@ -52,10 +52,10 @@ Make sure you have Python installed, along with valid API keys for:
 1. Running Pipile 1 (Local Active Learning)
 Navigate to the local folder and execute the interactive classification script:
     ``` bash
-    python pipeline_local/main_local_llm.py
+    python local_llm/local_llm_pipeline.py
     ```
 2. Running Pipeline 2 (Deep Rhetorical Comparison):
 Navigate to the comparison folder and run the end-to-end script. It will prompt you for two **YouTube video IDs** (the 11-character code after v= in a watch URL), classify the comments, save the dataset, and automatically render the comparative network graphs:
     ``` bash
-    python pipeline_comparison/compare_pipeline.py
+    python yt_comments_classifier/comparison_pipeline.py
     ```
