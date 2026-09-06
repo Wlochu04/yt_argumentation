@@ -31,8 +31,6 @@ Project consists of two different pipelines based on YouTube comments scraping a
 
 ### Prerequisites
 Make sure you have Python installed, along with valid API keys for:
-### Prerequisites
-Make sure you have Python installed, along with valid API keys for:
 - **YouTube Data API v3** ([Get a key via Google Cloud Console](https://console.cloud.google.com/))
 - **Groq API** ([Generate a free key via GroqCloud](https://console.groq.com/keys))
 
