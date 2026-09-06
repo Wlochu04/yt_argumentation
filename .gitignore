@@ -1,9 +1,21 @@
-#API keys
+# Secrets and API keys
 .env
 
-#Ignore DB
-*.xlsx
-*.csv
+# Python virtual environments
+venv/
+.venv/
+env/
 
-#ignore pycache
+# Cache and compiled Python files
 __pycache__/
+*.pyc
+*.pyo
+
+# OS generated files
+.DS_Store
+
+# Generated output files from comparison pipeline
+YT_comparison.xlsx
+
+# Archives
+archive/

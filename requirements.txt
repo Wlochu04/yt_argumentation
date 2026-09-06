@@ -1,0 +1,17 @@
+# Data manipulation and Excel support
+pandas
+openpyxl
+
+# YouTube API (Data Scrapper)
+google-api-python-client
+
+# Machine Learning (Local Pipeline)
+scikit-learn
+
+# LLM Integration (Comparison Pipeline)
+groq
+python-dotenv
+
+# Graph Visualization (Comparison Pipeline)
+networkx
+matplotlib

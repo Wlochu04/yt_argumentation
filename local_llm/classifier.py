@@ -4,13 +4,12 @@ from groq import Groq
 
 load_dotenv()
 
-#connecting to model
+# Initialize Groq client
 GROQ_KEY = os.getenv("GROQ_API_KEY")
-client = Groq(api_key = GROQ_KEY)
+client = Groq(api_key=GROQ_KEY)
 
-
-#AI prompt
 def classify_text(text):
+    # Classify a comment into basic categories or flag for human verification 
     prompt = f"""
     You are a research assistant. Classify the given political comment into one of the following categories:
     1. 'substantive' 
@@ -30,6 +29,8 @@ def classify_text(text):
             model="qwen/qwen3.8-27b",
             temperature=0.0
         )
-        return response.choices[0].message.content.strip()
+        # Strip whitespaces and enforce lowercase to match validation logic
+        return response.choices[0].message.content.strip().lower()
+    
     except Exception as e:
         return "error"

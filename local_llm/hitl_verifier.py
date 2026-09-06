@@ -1,5 +1,5 @@
 def run_hitl_verification(df):
-    
+    # Human-in-the-Loop verification loop for comment categorization 
     df['human_verified'] = ""
     category_map = {"s": "substantive", "e": "emotional", "o": "offtopic"}
 
