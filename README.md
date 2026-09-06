@@ -49,7 +49,7 @@ Make sure you have Python installed, along with valid API keys for:
     ```
 
 ### Execution
-1. Running Pipile 1 (Local Active Learning)
+1. Running Pipeline 1 (Local Active Learning)
 Navigate to the local folder and execute the interactive classification script:
     ``` bash
     python local_llm/local_llm_pipeline.py
