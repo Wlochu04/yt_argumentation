@@ -9,7 +9,7 @@ base_dir = os.path.dirname(os.path.abspath(__file__))
 excel_path = os.path.join(base_dir, "YT_comments.xlsx")
 
 from yt_comments_scrapper import get_and_clean_data
-from local_llm.local_ai import train_local_model, prediction_confidence
+from local_llm.local_lm import train_local_model, prediction_confidence
 from local_llm.classifier import classify_text
 
 def run_pipeline():

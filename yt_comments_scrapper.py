@@ -33,7 +33,7 @@ def get_and_clean_data(video_id=None):
         request = youtube.commentThreads().list(
             part="snippet",
             videoId=video_id,
-            maxResults=10,
+            maxResults=80,
             order="relevance"
         )
         response = request.execute()

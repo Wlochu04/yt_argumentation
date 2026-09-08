@@ -1,6 +1,7 @@
 import os
 import json
 from dotenv import load_dotenv
+import time
 from groq import Groq
 
 load_dotenv()
@@ -67,6 +68,8 @@ def classify_text(df):
         # Extract only the classification label for the dataframe output
         category = result_json.get("classification", "Error")
         rhetoric_classes.append(category)
+
+        time.sleep(1)
         
     df['rhetoric_class'] = rhetoric_classes
     
