@@ -27,8 +27,8 @@ Project consists of two different pipelines based on YouTube comments scraping a
 - **Visualization:** Automatically constructs side-by-side relational network graphs (using NetworkX and Matplotlib) to visually map out how specific argumentative strategies cluster around each video.
 
 ## 3. Visualization of Argumentative Strategies
-Comparative network graph mapping YouTube comments to a 5-class rhetorical taxonomy. Edge thickness indicates the density of a given argumentation strategy within the discourse.\
-
+Comparative network graph mapping YouTube comments to a 5-class rhetorical taxonomy. Edge thickness indicates the density of a given argumentation strategy within the discourse.
+<br>
 ![Visualization Graph](Figure_1.png)
 
 
