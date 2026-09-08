@@ -8,12 +8,13 @@ def train_local_model(df):
         raise ValueError("DataFrame passed to training is empty!")
 
     vectorizer = TfidfVectorizer()
-    model = LogisticRegression()
+    model = LogisticRegression(random_state=42, max_iter=1000, class_weight='balanced')
 
     train_X = vectorizer.fit_transform(df['comment'])
     train_Y = df['category']
 
     model.fit(train_X, train_Y)
+    
 
     return model, vectorizer
 

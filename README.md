@@ -26,8 +26,12 @@ Project consists of two different pipelines based on YouTube comments scraping a
 - **Mechanism:** Bypasses traditional vectorization to evaluate complex statements using the 5-class social media taxonomy (Value, Policy, Testimony, Fact, Rhetorical)(Abkenar et al. 2026). The LLM returns precise classifications and extraction rationales in a strict JSON format.
 - **Visualization:** Automatically constructs side-by-side relational network graphs (using NetworkX and Matplotlib) to visually map out how specific argumentative strategies cluster around each video.
 
+## 3. Visualization of Argumentative Strategies
+Comparative network graph mapping YouTube comments to a 5-class rhetorical taxonomy. Edge thickness indicates the density of a given argumentation strategy within the discourse.
+![Visualization Graph](Figure_1.png)
 
-## 3. Setup & How to Run
+
+## 4. Setup & How to Run
 
 ### Prerequisites
 Make sure you have Python installed, along with valid API keys for:
@@ -50,7 +54,7 @@ Make sure you have Python installed, along with valid API keys for:
 1. Running Pipeline 1 (Local Active Learning)
 Navigate to the local folder and execute the interactive classification script:
     ``` bash
-    python local_llm/local_llm_pipeline.py
+    python local_llm/local_lm_pipeline.py
     ```
 2. Running Pipeline 2 (Deep Rhetorical Comparison):
 Navigate to the comparison folder and run the end-to-end script. It will prompt you for two **YouTube video IDs** (the 11-character code after v= in a watch URL), classify the comments, save the dataset, and automatically render the comparative network graphs:
