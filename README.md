@@ -28,6 +28,7 @@ Project consists of two different pipelines based on YouTube comments scraping a
 
 ## 3. Visualization of Argumentative Strategies
 Comparative network graph mapping YouTube comments to a 5-class rhetorical taxonomy. Edge thickness indicates the density of a given argumentation strategy within the discourse.
+<br><br>
 ![Visualization Graph](Figure_1.png)
 
 
